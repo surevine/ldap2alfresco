@@ -26,7 +26,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.surevine.alfresco</groupId>
 	<artifactId>ldap2alfresco</artifactId>
-	<version>2.2.5</version>
+	<version>2.2.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>LDAP to Alfresco Project</name>
 	<description>This project provides a tool that synchronises data between LDAP and Alfresco.</description>
@@ -45,7 +45,7 @@
 
 	<!-- Required by the release plugin -->
 	<scm>
-		<developerConnection>scm:svn:https://svn.surevine.net/integration/ldap2alfresco/tech/imp</developerConnection>
+		<developerConnection>scm:git:git@github.com:surevine/ldap2alfresco.git</developerConnection>
 	</scm>
 
 	<!-- D E P E N D E N C I E S -->
@@ -63,7 +63,7 @@
 		<dependency>
 			<groupId>com.surevine.alfresco</groupId>
 			<artifactId>alfresco_connect_lib</artifactId>
-			<version>1.3.0</version>
+			<version>1.3.4</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
@@ -125,10 +125,7 @@
 			<plugins>
 				<plugin>
 					<artifactId>maven-release-plugin</artifactId>
-					<version>2.1</version>
-					<configuration>
-						<tagBase>https://svn.surevine.net/integration/ldap2alfresco/tech/tags</tagBase>
-					</configuration>
+					<version>2.4.1</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
